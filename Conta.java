@@ -26,6 +26,21 @@ public abstract class Conta {
 
     } 
 
+    public Conta (int senha, int nroConta,Agencia ag,double saldo,Cliente cliente,Cliente cliente2) //construtor caso a conta pertença a apenas um cliente
+    {
+        this.senha = senha;
+        this.nroConta =nroConta;
+        dataAbertura = Conta.dataAtual();
+        this.saldo = saldo;
+        this.ag = ag; 
+        this.estaAtiva = true;
+        this.clientes = new ArrayList<>();
+        this.transacoes = new ArrayList<>();
+        clientes.add(cliente);
+        clientes.add(cliente2);
+
+    }
+
     // Getters
     public int getSenha() {
         return senha;

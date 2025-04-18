@@ -2,13 +2,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 
-/* adicionei funções gets e sets em algumas classes, mudei o encapsulamento de alguns atributos que estavam publicos para protected ou private 
- * criei uma função estatica na classe de clientes que realiza uma busca em um vetor procurando um cliente com um cpf especifico
- * na função main tem um teste de busca de clientes
- * 
- */
 
 public class Main {
+
     public static void main(String[] args) {
 
         ArrayList <Conta> contas =  new ArrayList<>(); //lista de arrays para salvar os objetos
